@@ -1,0 +1,10 @@
+<article class="prose">
+  <h1>Reload fragments of the page on browser visibility change</h1>
+  <p>Navigate to another tab and come back to see the boxes below refresh.</p>
+
+  <div class="flex flex-row gap-2 min-h-[200px]" data-controller="reloadable">
+    <turbo-frame id="async_a" src="/async_a" class="flex-1 border-2 border-green-200 aria-[busy=true]:border-red-500" data-reloadable-target="reloadFrame"></turbo-frame>
+    <turbo-frame id="async_b" src="/async_b" class="flex-1 border-2 border-amber-200 aria-[busy=true]:border-red-500" data-reloadable-target="reloadFrame"></turbo-frame>
+    <turbo-frame id="async_c" src="/async_c" class="flex-1 border-2 border-purple-200 aria-[busy=true]:border-red-500" data-reloadable-target="reloadFrame"></turbo-frame>
+  </div>
+</article>
